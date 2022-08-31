@@ -1,0 +1,18 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: docs/docs
+  sections:
+    - file: docs/markdown
+    - file: docs/markdown-notebooks
+    - file: docs/notebooks
+- file: ocean/ocean
+  sections:
+    - file: ocean/recipes/Transport_through_straits
+- file: atmosphere/atmosphere
+- file: land/land
+- file: ice/ice
+- file: coupled/coupled
