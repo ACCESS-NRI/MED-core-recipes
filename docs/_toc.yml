@@ -3,16 +3,36 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: docs/docs
-  sections:
-    - file: docs/markdown
-    - file: docs/markdown-notebooks
-    - file: docs/notebooks
-- file: ocean/ocean
-  sections:
+parts:
+- caption: Tutorials
+  chapters:
+  - file: docs/markdown
+  - file: docs/markdown-notebooks
+  - file: docs/notebooks
+- caption: Ocean
+  chapters:
+  - file: ocean/metrics
+  - file: ocean/diagnostics
+  - file: ocean/evaluations
+    sections:
     - file: ocean/recipes/Transport_through_straits
-- file: atmosphere/atmosphere
-- file: land/land
-- file: ice/ice
-- file: coupled/coupled
+- caption: Atmosphere
+  chapters:
+  - file: atmosphere/metrics
+  - file: atmosphere/diagnostics
+  - file: atmosphere/evaluations
+- caption: Land
+  chapters:
+  - file: land/metrics
+  - file: land/diagnostics
+  - file: land/evaluations
+- caption: Ice
+  chapters:
+  - file: ice/metrics
+  - file: ice/diagnostics
+  - file: ice/evaluations
+- caption: Coupled
+  chapters:
+  - file: coupled/metrics
+  - file: coupled/diagnostics
+  - file: coupled/evaluations
